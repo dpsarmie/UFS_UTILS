@@ -107,7 +107,7 @@ elif [[  $target = nimbus ]]; then
   QUEUE=${QUEUE:-test}
   WLCLK=40
   export MOM6_FIXDIR=/home/${LOGNAME}/ufs_utils/fix/mom6/${MOM6_version}
-  BASELINE_ROOT=/lfs/h2/emc/nems/noscrub/emc.nems/UFS_UTILS/reg_tests/cpld_gridgen/baseline_data #FIXME
+  BASELINE_ROOT=$HOMEreg/cpld_gridgen/baseline_data
   export APRUN="mpiexec -n 12 -ppn 12 --cpu-bind core"
   export NCCMP=nccmp
 fi
