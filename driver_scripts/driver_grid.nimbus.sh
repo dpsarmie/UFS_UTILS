@@ -155,8 +155,8 @@ fi
 #-----------------------------------------------------------------------
 
 export home_dir=$SLURM_SUBMIT_DIR/..
-export TEMP_DIR=/scratch4/NCEPDEV/stmp/$LOGNAME/fv3_grid.$gtype
-export out_dir=/scratch4/NCEPDEV/stmp/$LOGNAME/my_grids
+export TEMP_DIR=/lfs-c1b/home/$USER/$LOGNAME/fv3_grid.$gtype
+export out_dir=/lfs-c1b/home/$USER/$LOGNAME/my_grids
 
 #-----------------------------------------------------------------------
 # Should not need to change anything below here.
