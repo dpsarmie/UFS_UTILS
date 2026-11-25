@@ -62,6 +62,9 @@ elif [[ -d /work/00315 && -d /scratch/00315 ]] ; then
 elif [[ "$(hostname)" =~ "Derecho" || "$(hostname)" =~ "derecho" ]]; then
     target="derecho"
     module purge
+elif [[ "$(hostname)" =~ "wcoss3"* ]]; then
+    target=nimbus
+    # module purge
 else
     if [[ ! -v PW_CSP ]]; then
         set +x
